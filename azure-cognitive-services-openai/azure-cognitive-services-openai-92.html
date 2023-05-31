@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Page 92</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</HEAD>
+<BODY bgcolor="#FFFFFF" vlink="blue" link="blue" >
+<p style="position:absolute;top:0px;left:0px"><img src="images/azure-cognitive-services-openai0092.png" width="892px" height="1252px">
+</img></p>
+<p style="position:absolute;top:62px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h130w_h18w_h;letter-spacing:0.50734px;">import&nbsp;tiktoken</span></p>
+<p style="position:absolute;top:84px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h113w_h18w_h;letter-spacing:0.65953px;">import&nbsp;openai</span></p>
+<p style="position:absolute;top:105px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h78w_h18w_h;letter-spacing:0.60876px;">import&nbsp;os</span></p>
+<p style="position:absolute;top:127px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.47198px;">openai.api_type&nbsp;=&nbsp;&quot;azure&quot;</span></p>
+<p style="position:absolute;top:148px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h286w_h18w_h;letter-spacing:0.52529px;">openai.api_version&nbsp;=&nbsp;&quot;2023-05-15&quot;</span></p>
+<p style="position:absolute;top:169px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h580w_h18w_h;letter-spacing:0.52297px;">openai.api_base&nbsp;=&nbsp;os.getenv(&quot;OPENAI_API_BASE&quot;)&nbsp;#&nbsp;Your&nbsp;Azure&nbsp;OpenAI</span></p>
+<p style="position:absolute;top:191px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h234w_h18w_h;letter-spacing:0.54798px;">resource's&nbsp;endpoint&nbsp;value&nbsp;.</span></p>
+<p style="position:absolute;top:212px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h381w_h18w_h;letter-spacing:0.57611px;">openai.api_key&nbsp;=&nbsp;os.getenv(&quot;OPENAI_API_KEY&quot;)</span></p>
+<p style="position:absolute;top:255px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h563w_h18w_h;letter-spacing:0.38235px;">system_message&nbsp;=&nbsp;{&quot;role&quot;:&nbsp;&quot;system&quot;,&nbsp;&quot;content&quot;:&nbsp;&quot;You&nbsp;are&nbsp;a&nbsp;helpful</span></p>
+<p style="position:absolute;top:276px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h104w_h18w_h;letter-spacing:0.64936px;">assistant.&quot;}</span></p>
+<p style="position:absolute;top:298px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.61498px;">max_response_tokens&nbsp;=&nbsp;250</span></p>
+<p style="position:absolute;top:319px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h147w_h18w_h;letter-spacing:0.69004px;">token_limit=&nbsp;4096</span></p>
+<p style="position:absolute;top:340px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h130w_h18w_h;letter-spacing:0.00000px;">conversation=[]</span></p>
+<p style="position:absolute;top:362px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h303w_h18w_h;letter-spacing:0.00000px;">conversation.append(system_message)</span></p>
+<p style="position:absolute;top:404px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h580w_h18w_h;letter-spacing:0.63984px;">def&nbsp;num_tokens_from_messages(messages,&nbsp;model=&quot;gpt-3.5-turbo-0301&quot;):</span></p>
+<p style="position:absolute;top:426px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h390w_h18w_h;letter-spacing:0.68928px;">encoding&nbsp;=&nbsp;tiktoken.encoding_for_model(model)</span></p>
+<p style="position:absolute;top:447px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h121w_h18w_h;letter-spacing:0.51657px;">num_tokens&nbsp;=&nbsp;0</span></p>
+<p style="position:absolute;top:469px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h208w_h18w_h;letter-spacing:0.52651px;">for&nbsp;message&nbsp;in&nbsp;messages:</span></p>
+<p style="position:absolute;top:490px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h442w_h18w_h;letter-spacing:0.46517px;">num_tokens&nbsp;+=&nbsp;4&nbsp;#&nbsp;every&nbsp;message&nbsp;follows&nbsp;&lt;im_start&gt;</span></p>
+<p style="position:absolute;top:511px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h277w_h18w_h;letter-spacing:0.00000px;">{role/name}\n{content}&lt;im_end&gt;\n</span></p>
+<p style="position:absolute;top:533px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h294w_h18w_h;letter-spacing:0.53075px;">for&nbsp;key,&nbsp;value&nbsp;in&nbsp;message.items():</span></p>
+<p style="position:absolute;top:554px;left:220px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h355w_h18w_h;letter-spacing:0.67928px;">num_tokens&nbsp;+=&nbsp;len(encoding.encode(value))</span></p>
+<p style="position:absolute;top:575px;left:220px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h511w_h18w_h;letter-spacing:0.38011px;">if&nbsp;key&nbsp;==&nbsp;&quot;name&quot;:&nbsp;#&nbsp;if&nbsp;there's&nbsp;a&nbsp;name,&nbsp;the&nbsp;role&nbsp;is&nbsp;omitted</span></p>
+<p style="position:absolute;top:597px;left:255px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h485w_h18w_h;letter-spacing:0.44136px;">num_tokens&nbsp;+=&nbsp;-1&nbsp;#&nbsp;role&nbsp;is&nbsp;always&nbsp;required&nbsp;and&nbsp;always&nbsp;1</span></p>
+<p style="position:absolute;top:618px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h43w_h18w_h;letter-spacing:0.00000px;">token</span></p>
+<p style="position:absolute;top:640px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h563w_h18w_h;letter-spacing:0.46696px;">num_tokens&nbsp;+=&nbsp;2&nbsp;#&nbsp;every&nbsp;reply&nbsp;is&nbsp;primed&nbsp;with&nbsp;&lt;im_start&gt;assistant</span></p>
+<p style="position:absolute;top:661px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h147w_h18w_h;letter-spacing:0.68999px;">return&nbsp;num_tokens</span></p>
+<p style="position:absolute;top:704px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#07704a;w_h104w_h18w_h;letter-spacing:0.97398px;">while(True):</span></p>
+<p style="position:absolute;top:725px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h190w_h18w_h;letter-spacing:0.44648px;">user_input&nbsp;=&nbsp;input(&quot;&quot;)</span></p>
+<p style="position:absolute;top:746px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h520w_h18w_h;letter-spacing:0.47285px;">conversation.append({&quot;role&quot;:&nbsp;&quot;user&quot;,&nbsp;&quot;content&quot;:&nbsp;user_input})</span></p>
+<p style="position:absolute;top:767px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h520w_h18w_h;letter-spacing:0.71631px;">conv_history_tokens&nbsp;=&nbsp;num_tokens_from_messages(conversation)</span></p>
+<p style="position:absolute;top:809px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h546w_h18w_h;letter-spacing:0.64740px;">while&nbsp;(conv_history_tokens+max_response_tokens&nbsp;&gt;=&nbsp;token_limit):</span></p>
+<p style="position:absolute;top:831px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h164w_h18w_h;letter-spacing:0.70095px;">del&nbsp;conversation[1]</span></p>
+<p style="position:absolute;top:852px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h520w_h18w_h;letter-spacing:0.71631px;">conv_history_tokens&nbsp;=&nbsp;num_tokens_from_messages(conversation)</span></p>
+<p style="position:absolute;top:895px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h346w_h18w_h;letter-spacing:0.67652px;">response&nbsp;=&nbsp;openai.ChatCompletion.create(</span></p>
+<p style="position:absolute;top:916px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h546w_h18w_h;letter-spacing:0.46074px;">engine=&quot;gpt-35-turbo&quot;,&nbsp;#&nbsp;The&nbsp;deployment&nbsp;name&nbsp;you&nbsp;chose&nbsp;when&nbsp;you</span></p>
+<p style="position:absolute;top:938px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h312w_h18w_h;letter-spacing:0.49535px;">deployed&nbsp;the&nbsp;ChatGPT&nbsp;or&nbsp;GPT-4&nbsp;model.</span></p>
+<p style="position:absolute;top:959px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h208w_h18w_h;letter-spacing:0.60887px;">messages&nbsp;=&nbsp;conversation,</span></p>
+<p style="position:absolute;top:980px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h130w_h18w_h;letter-spacing:0.93662px;">temperature=.7,</span></p>
+<p style="position:absolute;top:1002px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h268w_h18w_h;letter-spacing:0.00000px;">max_tokens=max_response_tokens,</span></p>
+<p style="position:absolute;top:1023px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">)</span></p>
+<p style="position:absolute;top:1066px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h623w_h18w_h;letter-spacing:0.50820px;">conversation.append({&quot;role&quot;:&nbsp;&quot;assistant&quot;,&nbsp;&quot;content&quot;:&nbsp;response['choices']</span></p>
+<p style="position:absolute;top:1087px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h234w_h18w_h;letter-spacing:0.87657px;">[0]['message']['content']})</span></p>
+<p style="position:absolute;top:1109px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h563w_h18w_h;letter-spacing:0.51223px;">print(&quot;\n&quot;&nbsp;+&nbsp;response['choices'][0]['message']['content']&nbsp;+&nbsp;&quot;\n&quot;)</span></p>
+</BODY>
+</HTML>

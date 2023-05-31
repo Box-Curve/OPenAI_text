@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Page 206</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</HEAD>
+<BODY bgcolor="#FFFFFF" vlink="blue" link="blue" >
+<p style="position:absolute;top:0px;left:0px"><img src="images/azure-cognitive-services-openai0206.png" width="892px" height="1252px">
+</img></p>
+<p style="position:absolute;top:851px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h640w_h24w_h;letter-spacing:0.29982px;">If&nbsp;you&nbsp;then&nbsp;check&nbsp;the&nbsp;length&nbsp;of&nbsp;the&nbsp;decode&nbsp;variable,&nbsp;you'll&nbsp;find&nbsp;it&nbsp;matches&nbsp;the&nbsp;first</span></p>
+<p style="position:absolute;top:882px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h256w_h24w_h;letter-spacing:0.39935px;">number&nbsp;in&nbsp;the&nbsp;n_tokens&nbsp;column.</span></p>
+<p style="position:absolute;top:935px;left:115px"><span style="virtical-align:top;font-size:12px;font-family:AAAAAC+SegoeUI;color:#161616;w_h45w_h19w_h;letter-spacing:1.19594px;">Python</span></p>
+<p style="position:absolute;top:1050px;left:115px"><span style="virtical-align:top;font-size:12px;font-family:AAAAAC+SegoeUI;color:#161616;w_h45w_h19w_h;letter-spacing:1.21553px;">Output</span></p>
+<p style="position:absolute;top:1159px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h643w_h24w_h;letter-spacing:0.35224px;">Now&nbsp;that&nbsp;we&nbsp;understand&nbsp;more&nbsp;about&nbsp;how&nbsp;tokenization&nbsp;works&nbsp;we&nbsp;can&nbsp;move&nbsp;on&nbsp;to</span></p>
+<p style="position:absolute;top:1187px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h677w_h24w_h;letter-spacing:0.35747px;">embedding.&nbsp;It&nbsp;is&nbsp;important&nbsp;to&nbsp;note,&nbsp;that&nbsp;we&nbsp;haven't&nbsp;actually&nbsp;tokenized&nbsp;the&nbsp;documents</span></p>
+<p style="position:absolute;top:42px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.56827px;">b'&nbsp;as',</span></p>
+<p style="position:absolute;top:64px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.59042px;">b'&nbsp;the',</span></p>
+<p style="position:absolute;top:85px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.56827px;">b'&nbsp;``',</span></p>
+<p style="position:absolute;top:106px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h104w_h18w_h;letter-spacing:0.00000px;">b'National',</span></p>
+<p style="position:absolute;top:128px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h104w_h18w_h;letter-spacing:0.64946px;">b'&nbsp;Science',</span></p>
+<p style="position:absolute;top:149px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h121w_h18w_h;letter-spacing:0.66856px;">b'&nbsp;Education',</span></p>
+<p style="position:absolute;top:170px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.59042px;">b'&nbsp;Tax',</span></p>
+<p style="position:absolute;top:192px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.56827px;">b'&nbsp;In',</span></p>
+<p style="position:absolute;top:213px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.00000px;">b'cent',</span></p>
+<p style="position:absolute;top:235px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.00000px;">b'ive',</span></p>
+<p style="position:absolute;top:256px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.59042px;">b'&nbsp;for',</span></p>
+<p style="position:absolute;top:277px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h130w_h18w_h;letter-spacing:0.67652px;">b'&nbsp;Businesses',</span></p>
+<p style="position:absolute;top:299px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.59042px;">b'&nbsp;Act',</span></p>
+<p style="position:absolute;top:320px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.56827px;">b'&nbsp;of',</span></p>
+<p style="position:absolute;top:341px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.50739px;">b'&nbsp;',</span></p>
+<p style="position:absolute;top:363px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.00000px;">b'200',</span></p>
+<p style="position:absolute;top:384px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.00000px;">b'7',</span></p>
+<p style="position:absolute;top:406px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.00000px;">b&quot;''.&quot;,</span></p>
+<p style="position:absolute;top:427px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.59042px;">b'&nbsp;SEC',</span></p>
+<p style="position:absolute;top:448px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.00000px;">b'.',</span></p>
+<p style="position:absolute;top:470px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.50739px;">b'&nbsp;',</span></p>
+<p style="position:absolute;top:491px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.00000px;">b'2',</span></p>
+<p style="position:absolute;top:512px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.00000px;">b'.',</span></p>
+<p style="position:absolute;top:534px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h52w_h18w_h;letter-spacing:0.54121px;">b'&nbsp;C',</span></p>
+<p style="position:absolute;top:555px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.00000px;">b'RED',</span></p>
+<p style="position:absolute;top:577px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.00000px;">b'ITS',</span></p>
+<p style="position:absolute;top:598px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.59042px;">b'&nbsp;FOR',</span></p>
+<p style="position:absolute;top:619px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h78w_h18w_h;letter-spacing:0.60887px;">b'&nbsp;CERT',</span></p>
+<p style="position:absolute;top:641px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.00000px;">b'AIN',</span></p>
+<p style="position:absolute;top:662px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h121w_h18w_h;letter-spacing:0.66856px;">b'&nbsp;CONTRIBUT',</span></p>
+<p style="position:absolute;top:683px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.00000px;">b'IONS',</span></p>
+<p style="position:absolute;top:705px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.59042px;">b'&nbsp;BEN',</span></p>
+<p style="position:absolute;top:726px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h52w_h18w_h;letter-spacing:0.00000px;">b'EF',</span></p>
+<p style="position:absolute;top:746px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h52w_h18w_h;letter-spacing:0.00000px;">b'IT',</span></p>
+<p style="position:absolute;top:768px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.00000px;">b'ING',</span></p>
+<p style="position:absolute;top:789px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.56827px;">b'&nbsp;SC',</span></p>
+<p style="position:absolute;top:983px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h95w_h18w_h;letter-spacing:0.00000px;">len(decode)</span></p>
+<p style="position:absolute;top:1097px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h35w_h18w_h;letter-spacing:0.00000px;">1466</span></p>
+</BODY>
+</HTML>

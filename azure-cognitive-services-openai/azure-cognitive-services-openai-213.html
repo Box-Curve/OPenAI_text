@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Page 213</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</HEAD>
+<BODY bgcolor="#FFFFFF" vlink="blue" link="blue" >
+<p style="position:absolute;top:0px;left:0px"><img src="images/azure-cognitive-services-openai0213.png" width="892px" height="1252px">
+</img></p>
+<p style="position:absolute;top:42px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h277w_h18w_h;letter-spacing:0.57724px;">using&nbsp;static&nbsp;System.Environment;</span></p>
+<p style="position:absolute;top:85px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h113w_h18w_h;letter-spacing:0.65953px;">class&nbsp;Program</span></p>
+<p style="position:absolute;top:106px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:128px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h572w_h18w_h;letter-spacing:0.49156px;">//&nbsp;This&nbsp;example&nbsp;requires&nbsp;environment&nbsp;variables&nbsp;named&nbsp;&quot;OPEN_AI_KEY&quot;</span></p>
+<p style="position:absolute;top:149px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h191w_h18w_h;letter-spacing:0.51029px;">and&nbsp;&quot;OPEN_AI_ENDPOINT&quot;</span></p>
+<p style="position:absolute;top:170px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h407w_h18w_h;letter-spacing:0.47694px;">//&nbsp;Your&nbsp;endpoint&nbsp;should&nbsp;look&nbsp;like&nbsp;the&nbsp;following</span></p>
+<p style="position:absolute;top:192px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h450w_h18w_h;letter-spacing:0.00000px;">https://YOUR_OPEN_AI_RESOURCE_NAME.openai.azure.com/</span></p>
+<p style="position:absolute;top:213px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.53400px;">static&nbsp;string&nbsp;openAIKey&nbsp;=</span></p>
+<p style="position:absolute;top:235px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h433w_h18w_h;letter-spacing:0.69982px;">Environment.GetEnvironmentVariable(&quot;OPEN_AI_KEY&quot;);</span></p>
+<p style="position:absolute;top:256px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h260w_h18w_h;letter-spacing:0.56631px;">static&nbsp;string&nbsp;openAIEndpoint&nbsp;=</span></p>
+<p style="position:absolute;top:277px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h476w_h18w_h;letter-spacing:0.70870px;">Environment.GetEnvironmentVariable(&quot;OPEN_AI_ENDPOINT&quot;);</span></p>
+<p style="position:absolute;top:320px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h580w_h18w_h;letter-spacing:0.45327px;">//&nbsp;Enter&nbsp;the&nbsp;deployment&nbsp;name&nbsp;you&nbsp;chose&nbsp;when&nbsp;you&nbsp;deployed&nbsp;the&nbsp;model.</span></p>
+<p style="position:absolute;top:341px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h364w_h18w_h;letter-spacing:0.48703px;">static&nbsp;string&nbsp;engine&nbsp;=&nbsp;&quot;text-davinci-002&quot;;</span></p>
+<p style="position:absolute;top:384px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h563w_h18w_h;letter-spacing:0.48860px;">//&nbsp;This&nbsp;example&nbsp;requires&nbsp;environment&nbsp;variables&nbsp;named&nbsp;&quot;SPEECH_KEY&quot;</span></p>
+<p style="position:absolute;top:406px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h165w_h18w_h;letter-spacing:0.48202px;">and&nbsp;&quot;SPEECH_REGION&quot;</span></p>
+<p style="position:absolute;top:427px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.53400px;">static&nbsp;string&nbsp;speechKey&nbsp;=</span></p>
+<p style="position:absolute;top:448px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h424w_h18w_h;letter-spacing:0.69784px;">Environment.GetEnvironmentVariable(&quot;SPEECH_KEY&quot;);</span></p>
+<p style="position:absolute;top:470px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h242w_h18w_h;letter-spacing:0.55433px;">static&nbsp;string&nbsp;speechRegion&nbsp;=</span></p>
+<p style="position:absolute;top:491px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h450w_h18w_h;letter-spacing:0.70354px;">Environment.GetEnvironmentVariable(&quot;SPEECH_REGION&quot;);</span></p>
+<p style="position:absolute;top:534px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h502w_h18w_h;letter-spacing:0.46619px;">//&nbsp;Prompts&nbsp;Azure&nbsp;OpenAI&nbsp;with&nbsp;a&nbsp;request&nbsp;and&nbsp;synthesizes&nbsp;the</span></p>
+<p style="position:absolute;top:555px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h78w_h18w_h;letter-spacing:0.00000px;">response.</span></p>
+<p style="position:absolute;top:577px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h364w_h18w_h;letter-spacing:0.56815px;">async&nbsp;static&nbsp;Task&nbsp;AskOpenAI(string&nbsp;prompt)</span></p>
+<p style="position:absolute;top:598px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:619px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h165w_h18w_h;letter-spacing:0.48202px;">//&nbsp;Ask&nbsp;Azure&nbsp;OpenAI</span></p>
+<p style="position:absolute;top:641px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h468w_h18w_h;letter-spacing:0.56925px;">OpenAIClient&nbsp;client&nbsp;=&nbsp;new(new&nbsp;Uri(openAIEndpoint),&nbsp;new</span></p>
+<p style="position:absolute;top:662px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h268w_h18w_h;letter-spacing:0.00000px;">AzureKeyCredential(openAIKey));</span></p>
+<p style="position:absolute;top:683px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h424w_h18w_h;letter-spacing:0.59366px;">var&nbsp;completionsOptions&nbsp;=&nbsp;new&nbsp;CompletionsOptions()</span></p>
+<p style="position:absolute;top:705px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:726px;left:263px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h182w_h18w_h;letter-spacing:0.43713px;">Prompts&nbsp;=&nbsp;{&nbsp;prompt&nbsp;},</span></p>
+<p style="position:absolute;top:746px;left:263px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h139w_h18w_h;letter-spacing:0.54115px;">MaxTokens&nbsp;=&nbsp;100,</span></p>
+<p style="position:absolute;top:768px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h17w_h18w_h;letter-spacing:0.00000px;">};</span></p>
+<p style="position:absolute;top:789px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h372w_h18w_h;letter-spacing:0.61243px;">Response&lt;Completions&gt;&nbsp;completionsResponse&nbsp;=</span></p>
+<p style="position:absolute;top:811px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h433w_h18w_h;letter-spacing:0.76587px;">client.GetCompletions(engine,&nbsp;completionsOptions);</span></p>
+<p style="position:absolute;top:832px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h546w_h18w_h;letter-spacing:0.67292px;">string&nbsp;text&nbsp;=&nbsp;completionsResponse.Value.Choices[0].Text.Trim();</span></p>
+<p style="position:absolute;top:853px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h450w_h18w_h;letter-spacing:0.56281px;">Console.WriteLine($&quot;Azure&nbsp;OpenAI&nbsp;response:&nbsp;{text}&quot;);</span></p>
+<p style="position:absolute;top:896px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h511w_h18w_h;letter-spacing:0.66522px;">var&nbsp;speechConfig&nbsp;=&nbsp;SpeechConfig.FromSubscription(speechKey,</span></p>
+<p style="position:absolute;top:917px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h121w_h18w_h;letter-spacing:0.00000px;">speechRegion);</span></p>
+<p style="position:absolute;top:939px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h355w_h18w_h;letter-spacing:0.44979px;">//&nbsp;The&nbsp;language&nbsp;of&nbsp;the&nbsp;voice&nbsp;that&nbsp;speaks.</span></p>
+<p style="position:absolute;top:960px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h407w_h18w_h;letter-spacing:0.63593px;">speechConfig.SpeechSynthesisVoiceName&nbsp;=&nbsp;&quot;en-US-</span></p>
+<p style="position:absolute;top:982px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h216w_h18w_h;letter-spacing:0.72484px;">JennyMultilingualNeural&quot;;</span></p>
+<p style="position:absolute;top:1003px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h546w_h18w_h;letter-spacing:0.67294px;">var&nbsp;audioOutputConfig&nbsp;=&nbsp;AudioConfig.FromDefaultSpeakerOutput();</span></p>
+<p style="position:absolute;top:1046px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h294w_h18w_h;letter-spacing:0.53076px;">using&nbsp;(var&nbsp;speechSynthesizer&nbsp;=&nbsp;new</span></p>
+<p style="position:absolute;top:1067px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h442w_h18w_h;letter-spacing:0.76672px;">SpeechSynthesizer(speechConfig,&nbsp;audioOutputConfig))</span></p>
+<p style="position:absolute;top:1088px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:1110px;left:263px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h286w_h18w_h;letter-spacing:0.58234px;">var&nbsp;speechSynthesisResult&nbsp;=&nbsp;await</span></p>
+<p style="position:absolute;top:1131px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#07704a;w_h520w_h18w_h;letter-spacing:0.83978px;">speechSynthesizer.SpeakTextAsync(text).ConfigureAwait(true);</span></p>
+<p style="position:absolute;top:1174px;left:263px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h303w_h18w_h;letter-spacing:0.66077px;">if&nbsp;(speechSynthesisResult.Reason&nbsp;==</span></p>
+<p style="position:absolute;top:1195px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h346w_h18w_h;letter-spacing:0.00000px;">ResultReason.SynthesizingAudioCompleted)</span></p>
+</BODY>
+</HTML>

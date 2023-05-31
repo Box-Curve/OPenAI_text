@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Page 215</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</HEAD>
+<BODY bgcolor="#FFFFFF" vlink="blue" link="blue" >
+<p style="position:absolute;top:0px;left:0px"><img src="images/azure-cognitive-services-openai0215.png" width="892px" height="1252px">
+</img></p>
+<p style="position:absolute;top:936px;left:121px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h659w_h24w_h;letter-spacing:0.34334px;">5.&nbsp;To&nbsp;increase&nbsp;or&nbsp;decrease&nbsp;the&nbsp;number&nbsp;of&nbsp;tokens&nbsp;returned&nbsp;by&nbsp;Azure&nbsp;OpenAI,&nbsp;change</span></p>
+<p style="position:absolute;top:965px;left:139px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h589w_h24w_h;letter-spacing:0.38051px;">the&nbsp;MaxTokens&nbsp;property&nbsp;in&nbsp;the&nbsp;CompletionsOptions&nbsp;class&nbsp;instance.&nbsp;For&nbsp;more</span></p>
+<p style="position:absolute;top:997px;left:139px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h617w_h24w_h;letter-spacing:0.37651px;"><a href="https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/"style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h0w_h0w_h;letter-spacing:0.00000px;">information&nbsp;tokens&nbsp;and&nbsp;cost&nbsp;implications,&nbsp;see&nbsp;</a><a href="azure-cognitive-services-openai-5.html"style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#0065b3;w_h0w_h0w_h;letter-spacing:0.00000px;">Azure&nbsp;OpenAI&nbsp;tokens&nbsp;</a><a href="https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/"style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h0w_h0w_h;letter-spacing:0.00000px;">and&nbsp;Azure</a></span></p>
+<p style="position:absolute;top:1025px;left:139px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#0065b3;w_h142w_h24w_h;letter-spacing:0.44264px;"><a href="https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/"style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#0065b3;w_h0w_h0w_h;letter-spacing:0.00000px;">OpenAI&nbsp;pricing&nbsp;.</a></span></p>
+<p style="position:absolute;top:1072px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h648w_h24w_h;letter-spacing:0.36796px;">Run&nbsp;your&nbsp;new&nbsp;console&nbsp;application&nbsp;to&nbsp;start&nbsp;speech&nbsp;recognition&nbsp;from&nbsp;a&nbsp;microphone:</span></p>
+<p style="position:absolute;top:1124px;left:115px"><span style="virtical-align:top;font-size:12px;font-family:AAAAAC+SegoeUI;color:#161616;w_h51w_h19w_h;letter-spacing:1.09431px;">Console</span></p>
+<p style="position:absolute;top:42px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h35w_h18w_h;letter-spacing:0.00000px;">else</span></p>
+<p style="position:absolute;top:64px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:85px;left:367px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h329w_h18w_h;letter-spacing:0.67063px;">Console.WriteLine($&quot;Recognized&nbsp;speech:</span></p>
+<p style="position:absolute;top:106px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h286w_h18w_h;letter-spacing:0.74411px;">{speechRecognitionResult.Text}&quot;);</span></p>
+<p style="position:absolute;top:128px;left:367px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h43w_h18w_h;letter-spacing:0.00000px;">await</span></p>
+<p style="position:absolute;top:149px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#07704a;w_h528w_h18w_h;letter-spacing:0.83932px;">AskOpenAI(speechRecognitionResult.Text).ConfigureAwait(true);</span></p>
+<p style="position:absolute;top:170px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:192px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h52w_h18w_h;letter-spacing:1.21768px;">break;</span></p>
+<p style="position:absolute;top:213px;left:298px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h225w_h18w_h;letter-spacing:0.72781px;">case&nbsp;ResultReason.NoMatch:</span></p>
+<p style="position:absolute;top:235px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h433w_h18w_h;letter-spacing:0.55602px;">Console.WriteLine($&quot;No&nbsp;speech&nbsp;could&nbsp;be&nbsp;recognized:</span></p>
+<p style="position:absolute;top:256px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h26w_h18w_h;letter-spacing:0.40574px;">&quot;);</span></p>
+<p style="position:absolute;top:277px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h52w_h18w_h;letter-spacing:1.21768px;">break;</span></p>
+<p style="position:absolute;top:299px;left:298px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h234w_h18w_h;letter-spacing:0.73061px;">case&nbsp;ResultReason.Canceled:</span></p>
+<p style="position:absolute;top:320px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.61497px;">var&nbsp;cancellationDetails&nbsp;=</span></p>
+<p style="position:absolute;top:341px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h485w_h18w_h;letter-spacing:0.00000px;">CancellationDetails.FromResult(speechRecognitionResult);</span></p>
+<p style="position:absolute;top:363px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h416w_h18w_h;letter-spacing:0.63879px;">Console.WriteLine($&quot;Speech&nbsp;Recognition&nbsp;canceled:</span></p>
+<p style="position:absolute;top:384px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h268w_h18w_h;letter-spacing:0.74014px;">{cancellationDetails.Reason}&quot;);</span></p>
+<p style="position:absolute;top:406px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h286w_h18w_h;letter-spacing:0.65341px;">if&nbsp;(cancellationDetails.Reason&nbsp;==</span></p>
+<p style="position:absolute;top:427px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.00000px;">CancellationReason.Error)</span></p>
+<p style="position:absolute;top:448px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:470px;left:367px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h294w_h18w_h;letter-spacing:0.65718px;">Console.WriteLine($&quot;Error&nbsp;details=</span></p>
+<p style="position:absolute;top:491px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#a31515;w_h320w_h18w_h;letter-spacing:0.75090px;">{cancellationDetails.ErrorDetails}&quot;);</span></p>
+<p style="position:absolute;top:512px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:534px;left:332px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h52w_h18w_h;letter-spacing:1.21768px;">break;</span></p>
+<p style="position:absolute;top:555px;left:263px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:577px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:598px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:641px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h320w_h18w_h;letter-spacing:0.54600px;">async&nbsp;static&nbsp;Task&nbsp;Main(string[]&nbsp;args)</span></p>
+<p style="position:absolute;top:662px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:683px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#0101fd;w_h26w_h18w_h;letter-spacing:0.00000px;">try</span></p>
+<p style="position:absolute;top:705px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:726px;left:263px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#07704a;w_h381w_h18w_h;letter-spacing:0.75996px;">await&nbsp;ChatWithOpenAI().ConfigureAwait(true);</span></p>
+<p style="position:absolute;top:746px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:768px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h173w_h18w_h;letter-spacing:0.57987px;">catch&nbsp;(Exception&nbsp;ex)</span></p>
+<p style="position:absolute;top:789px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:811px;left:263px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h260w_h18w_h;letter-spacing:0.00000px;">Console.WriteLine(ex.Message);</span></p>
+<p style="position:absolute;top:832px;left:228px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:853px;left:194px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:875px;left:159px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:1172px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h87w_h18w_h;letter-spacing:0.62448px;">dotnet&nbsp;run</span></p>
+</BODY>
+</HTML>

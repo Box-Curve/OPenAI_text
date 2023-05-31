@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Page 205</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</HEAD>
+<BODY bgcolor="#FFFFFF" vlink="blue" link="blue" >
+<p style="position:absolute;top:0px;left:0px"><img src="images/azure-cognitive-services-openai0205.png" width="892px" height="1252px">
+</img></p>
+<p style="position:absolute;top:90px;left:97px"><img src="images/azure-cognitive-services-openai_pic0048.png" width="700px" height="416px">
+</img></p>
+<p style="position:absolute;top:44px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAB+SegoeUI-Semibold;color:#161616;font-weight:bold;w_h63w_h24w_h;letter-spacing:0.00000px;">Output:</span></p>
+<p style="position:absolute;top:534px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h702w_h24w_h;letter-spacing:0.33527px;">To&nbsp;understand&nbsp;the&nbsp;n_tokens&nbsp;column&nbsp;a&nbsp;little&nbsp;more&nbsp;as&nbsp;well&nbsp;how&nbsp;text&nbsp;ultimately&nbsp;is&nbsp;tokenized,</span></p>
+<p style="position:absolute;top:564px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h338w_h24w_h;letter-spacing:0.30881px;">it&nbsp;can&nbsp;be&nbsp;helpful&nbsp;to&nbsp;run&nbsp;the&nbsp;following&nbsp;code:</span></p>
+<p style="position:absolute;top:617px;left:115px"><span style="virtical-align:top;font-size:12px;font-family:AAAAAC+SegoeUI;color:#161616;w_h45w_h19w_h;letter-spacing:1.19594px;">Python</span></p>
+<p style="position:absolute;top:767px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h665w_h24w_h;letter-spacing:0.35390px;">For&nbsp;our&nbsp;docs&nbsp;we're&nbsp;intentionally&nbsp;truncating&nbsp;the&nbsp;output,&nbsp;but&nbsp;running&nbsp;this&nbsp;command&nbsp;in</span></p>
+<p style="position:absolute;top:797px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h700w_h24w_h;letter-spacing:0.33451px;">your&nbsp;environment&nbsp;will&nbsp;return&nbsp;the&nbsp;full&nbsp;text&nbsp;from&nbsp;index&nbsp;zero&nbsp;tokenized&nbsp;into&nbsp;chunks.&nbsp;You&nbsp;can</span></p>
+<p style="position:absolute;top:826px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h659w_h24w_h;letter-spacing:0.31669px;">see&nbsp;that&nbsp;in&nbsp;some&nbsp;cases&nbsp;an&nbsp;entire&nbsp;word&nbsp;is&nbsp;represented&nbsp;with&nbsp;a&nbsp;single&nbsp;token&nbsp;whereas&nbsp;in</span></p>
+<p style="position:absolute;top:854px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h423w_h24w_h;letter-spacing:0.34078px;">others&nbsp;parts&nbsp;of&nbsp;words&nbsp;are&nbsp;split&nbsp;across&nbsp;multiple&nbsp;tokens.</span></p>
+<p style="position:absolute;top:907px;left:115px"><span style="virtical-align:top;font-size:12px;font-family:AAAAAC+SegoeUI;color:#161616;w_h45w_h19w_h;letter-spacing:1.21553px;">Output</span></p>
+<p style="position:absolute;top:454px;left:753px"><span style="virtical-align:top;font-size:20px;font-family:CAAAAA+docons;color:#505050;w_h23w_h25w_h;letter-spacing:0.00000px;"><a href="https://learn.microsoft.com/en-us/azure/cognitive-services/openai/media/tutorials/tokens-dataframe.png#lightbox"style="virtical-align:top;font-size:20px;font-family:CAAAAA+docons;color:#505050;w_h0w_h0w_h;letter-spacing:0.00000px;"></a></span></p>
+<p style="position:absolute;top:664px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h433w_h18w_h;letter-spacing:0.69982px;">sample_encode&nbsp;=&nbsp;tokenizer.encode(df_bills.text[0])</span></p>
+<p style="position:absolute;top:686px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h459w_h18w_h;letter-spacing:0.70535px;">decode&nbsp;=&nbsp;tokenizer.decode_tokens_bytes(sample_encode)</span></p>
+<p style="position:absolute;top:707px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h52w_h18w_h;letter-spacing:0.00000px;">decode</span></p>
+<p style="position:absolute;top:955px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h104w_h18w_h;letter-spacing:0.00000px;">[b'SECTION',</span></p>
+<p style="position:absolute;top:976px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.50739px;">b'&nbsp;',</span></p>
+<p style="position:absolute;top:997px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.00000px;">b'1',</span></p>
+<p style="position:absolute;top:1019px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.00000px;">b'.',</span></p>
+<p style="position:absolute;top:1040px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h87w_h18w_h;letter-spacing:0.62448px;">b'&nbsp;SHORT',</span></p>
+<p style="position:absolute;top:1061px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h87w_h18w_h;letter-spacing:0.62448px;">b'&nbsp;TITLE',</span></p>
+<p style="position:absolute;top:1083px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h43w_h18w_h;letter-spacing:0.00000px;">b'.',</span></p>
+<p style="position:absolute;top:1104px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h78w_h18w_h;letter-spacing:0.60887px;">b'&nbsp;This',</span></p>
+<p style="position:absolute;top:1126px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.59042px;">b'&nbsp;Act',</span></p>
+<p style="position:absolute;top:1147px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h69w_h18w_h;letter-spacing:0.59042px;">b'&nbsp;may',</span></p>
+<p style="position:absolute;top:1168px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h61w_h18w_h;letter-spacing:0.56827px;">b'&nbsp;be',</span></p>
+<p style="position:absolute;top:1190px;left:125px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h87w_h18w_h;letter-spacing:0.62448px;">b'&nbsp;cited',</span></p>
+</BODY>
+</HTML>

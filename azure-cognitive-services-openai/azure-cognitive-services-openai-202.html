@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Page 202</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</HEAD>
+<BODY bgcolor="#FFFFFF" vlink="blue" link="blue" >
+<p style="position:absolute;top:0px;left:0px"><img src="images/azure-cognitive-services-openai0202.png" width="892px" height="1252px">
+</img></p>
+<p style="position:absolute;top:723px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h686w_h24w_h;letter-spacing:0.32581px;">The&nbsp;output&nbsp;of&nbsp;this&nbsp;command&nbsp;will&nbsp;vary&nbsp;based&nbsp;on&nbsp;the&nbsp;number&nbsp;and&nbsp;type&nbsp;of&nbsp;models&nbsp;you've</span></p>
+<p style="position:absolute;top:752px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAB+SegoeUI-Semibold;color:#161616;font-weight:bold;w_h681w_h24w_h;letter-spacing:0.33592px;">deployed.&nbsp;In&nbsp;this&nbsp;case,&nbsp;we&nbsp;need&nbsp;to&nbsp;confirm&nbsp;that&nbsp;we&nbsp;have&nbsp;an&nbsp;entry&nbsp;for&nbsp;text-embedding-</span></p>
+<p style="position:absolute;top:781px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#0065b3;w_h685w_h24w_h;letter-spacing:0.32089px;">ada-002.&nbsp;If&nbsp;you&nbsp;find&nbsp;that&nbsp;you're&nbsp;missing&nbsp;this&nbsp;model,&nbsp;you'll&nbsp;need&nbsp;to&nbsp;<a href="azure-cognitive-services-openai-82.html"style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#0065b3;w_h0w_h0w_h;letter-spacing:0.00000px;">deploy&nbsp;the&nbsp;model&nbsp;</a>to</span></p>
+<p style="position:absolute;top:809px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h265w_h24w_h;letter-spacing:0.44090px;">your&nbsp;resource&nbsp;before&nbsp;proceeding.</span></p>
+<p style="position:absolute;top:856px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h643w_h24w_h;letter-spacing:0.31323px;">Now&nbsp;we&nbsp;need&nbsp;to&nbsp;read&nbsp;our&nbsp;csv&nbsp;file&nbsp;and&nbsp;create&nbsp;a&nbsp;pandas&nbsp;DataFrame.&nbsp;After&nbsp;the&nbsp;initial</span></p>
+<p style="position:absolute;top:885px;left:96px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h593w_h24w_h;letter-spacing:0.40583px;">DataFrame&nbsp;is&nbsp;created,&nbsp;we&nbsp;can&nbsp;view&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;table&nbsp;by&nbsp;running&nbsp;df.</span></p>
+<p style="position:absolute;top:940px;left:115px"><span style="virtical-align:top;font-size:12px;font-family:AAAAAC+SegoeUI;color:#161616;w_h45w_h19w_h;letter-spacing:1.19594px;">Python</span></p>
+<p style="position:absolute;top:1113px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAB+SegoeUI-Semibold;color:#161616;font-weight:bold;w_h63w_h24w_h;letter-spacing:0.00000px;">Output:</span></p>
+<p style="position:absolute;top:42px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.53409px;">&quot;updated_at&quot;:&nbsp;1657572712,</span></p>
+<p style="position:absolute;top:64px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h191w_h18w_h;letter-spacing:0.39689px;">&quot;object&quot;:&nbsp;&quot;deployment&quot;</span></p>
+<p style="position:absolute;top:85px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h17w_h18w_h;letter-spacing:0.00000px;">},</span></p>
+<p style="position:absolute;top:106px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:128px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h165w_h18w_h;letter-spacing:0.48202px;">&quot;scale_settings&quot;:&nbsp;{</span></p>
+<p style="position:absolute;top:149px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h208w_h18w_h;letter-spacing:0.41455px;">&quot;scale_type&quot;:&nbsp;&quot;standard&quot;</span></p>
+<p style="position:absolute;top:170px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h17w_h18w_h;letter-spacing:0.00000px;">},</span></p>
+<p style="position:absolute;top:192px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h320w_h18w_h;letter-spacing:0.50062px;">&quot;model&quot;:&nbsp;&quot;text-search-curie-doc-001&quot;,</span></p>
+<p style="position:absolute;top:213px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h260w_h18w_h;letter-spacing:0.45952px;">&quot;owner&quot;:&nbsp;&quot;organization-owner&quot;,</span></p>
+<p style="position:absolute;top:235px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h294w_h18w_h;letter-spacing:0.48424px;">&quot;id&quot;:&nbsp;&quot;text-search-curie-doc-001&quot;,</span></p>
+<p style="position:absolute;top:256px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h191w_h18w_h;letter-spacing:0.39689px;">&quot;status&quot;:&nbsp;&quot;succeeded&quot;,</span></p>
+<p style="position:absolute;top:277px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.53409px;">&quot;created_at&quot;:&nbsp;1668620345,</span></p>
+<p style="position:absolute;top:299px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.53409px;">&quot;updated_at&quot;:&nbsp;1668620345,</span></p>
+<p style="position:absolute;top:320px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h191w_h18w_h;letter-spacing:0.39689px;">&quot;object&quot;:&nbsp;&quot;deployment&quot;</span></p>
+<p style="position:absolute;top:341px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h17w_h18w_h;letter-spacing:0.00000px;">},</span></p>
+<p style="position:absolute;top:363px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">{</span></p>
+<p style="position:absolute;top:384px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h165w_h18w_h;letter-spacing:0.48202px;">&quot;scale_settings&quot;:&nbsp;{</span></p>
+<p style="position:absolute;top:406px;left:186px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h208w_h18w_h;letter-spacing:0.41455px;">&quot;scale_type&quot;:&nbsp;&quot;standard&quot;</span></p>
+<p style="position:absolute;top:427px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h17w_h18w_h;letter-spacing:0.00000px;">},</span></p>
+<p style="position:absolute;top:448px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h338w_h18w_h;letter-spacing:0.51066px;">&quot;model&quot;:&nbsp;&quot;text-search-curie-query-001&quot;,</span></p>
+<p style="position:absolute;top:470px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h260w_h18w_h;letter-spacing:0.45952px;">&quot;owner&quot;:&nbsp;&quot;organization-owner&quot;,</span></p>
+<p style="position:absolute;top:491px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h312w_h18w_h;letter-spacing:0.49535px;">&quot;id&quot;:&nbsp;&quot;text-search-curie-query-001&quot;,</span></p>
+<p style="position:absolute;top:512px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h191w_h18w_h;letter-spacing:0.39689px;">&quot;status&quot;:&nbsp;&quot;succeeded&quot;,</span></p>
+<p style="position:absolute;top:534px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.53409px;">&quot;created_at&quot;:&nbsp;1669048765,</span></p>
+<p style="position:absolute;top:555px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.53409px;">&quot;updated_at&quot;:&nbsp;1669048765,</span></p>
+<p style="position:absolute;top:577px;left:168px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h191w_h18w_h;letter-spacing:0.39689px;">&quot;object&quot;:&nbsp;&quot;deployment&quot;</span></p>
+<p style="position:absolute;top:598px;left:151px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:619px;left:134px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h17w_h18w_h;letter-spacing:0.00000px;">],</span></p>
+<p style="position:absolute;top:641px;left:134px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h139w_h18w_h;letter-spacing:0.33305px;">&quot;object&quot;:&nbsp;&quot;list&quot;</span></p>
+<p style="position:absolute;top:662px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">}</span></p>
+<p style="position:absolute;top:987px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h658w_h18w_h;letter-spacing:0.69321px;">df=pd.read_csv(os.path.join(os.getcwd(),'bill_sum_data.csv'))&nbsp;#&nbsp;This&nbsp;assumes</span></p>
+<p style="position:absolute;top:1009px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h623w_h18w_h;letter-spacing:0.46761px;">that&nbsp;you&nbsp;have&nbsp;placed&nbsp;the&nbsp;bill_sum_data.csv&nbsp;in&nbsp;the&nbsp;same&nbsp;directory&nbsp;you&nbsp;are</span></p>
+<p style="position:absolute;top:1030px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#008000;w_h216w_h18w_h;letter-spacing:0.61502px;">running&nbsp;Jupyter&nbsp;Notebooks</span></p>
+<p style="position:absolute;top:1051px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h17w_h18w_h;letter-spacing:0.00000px;">df</span></p>
+</BODY>
+</HTML>

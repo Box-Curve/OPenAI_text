@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Page 97</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</HEAD>
+<BODY bgcolor="#FFFFFF" vlink="blue" link="blue" >
+<p style="position:absolute;top:0px;left:0px"><img src="images/azure-cognitive-services-openai0097.png" width="892px" height="1252px">
+</img></p>
+<p style="position:absolute;top:492px;left:326px"><img src="images/azure-cognitive-services-openai_pic000B.png" width="16px" height="16px">
+</img></p>
+<p style="position:absolute;top:684px;left:291px"><img src="images/azure-cognitive-services-openai_pic000B.png" width="16px" height="16px">
+</img></p>
+<p style="position:absolute;top:960px;left:343px"><img src="images/azure-cognitive-services-openai_pic000C.png" width="18px" height="18px">
+</img></p>
+<p style="position:absolute;top:1004px;left:317px"><img src="images/azure-cognitive-services-openai_pic000D.png" width="18px" height="16px">
+</img></p>
+<p style="position:absolute;top:1004px;left:339px"><img src="images/azure-cognitive-services-openai_pic000D.png" width="18px" height="16px">
+</img></p>
+<p style="position:absolute;top:44px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h673w_h24w_h;letter-spacing:0.30986px;">and&nbsp;the&nbsp;concept&nbsp;of&nbsp;a&nbsp;tweet.&nbsp;If&nbsp;you're&nbsp;building&nbsp;a&nbsp;classifier&nbsp;for&nbsp;something&nbsp;the&nbsp;API&nbsp;might</span></p>
+<p style="position:absolute;top:73px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h548w_h24w_h;letter-spacing:0.33708px;">not&nbsp;be&nbsp;familiar&nbsp;with,&nbsp;it&nbsp;might&nbsp;be&nbsp;necessary&nbsp;to&nbsp;provide&nbsp;more&nbsp;examples.</span></p>
+<p style="position:absolute;top:190px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h689w_h24w_h;letter-spacing:0.30392px;">Now&nbsp;that&nbsp;we&nbsp;have&nbsp;a&nbsp;grasp&nbsp;of&nbsp;how&nbsp;to&nbsp;build&nbsp;a&nbsp;classifier,&nbsp;let's&nbsp;take&nbsp;that&nbsp;example&nbsp;and&nbsp;make</span></p>
+<p style="position:absolute;top:219px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h700w_h24w_h;letter-spacing:0.29182px;">it&nbsp;even&nbsp;more&nbsp;efficient&nbsp;so&nbsp;that&nbsp;we&nbsp;can&nbsp;use&nbsp;it&nbsp;to&nbsp;get&nbsp;multiple&nbsp;results&nbsp;back&nbsp;from&nbsp;one&nbsp;API&nbsp;call.</span></p>
+<p style="position:absolute;top:1150px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h693w_h24w_h;letter-spacing:0.31143px;">After&nbsp;showing&nbsp;the&nbsp;API&nbsp;how&nbsp;tweets&nbsp;are&nbsp;classified&nbsp;by&nbsp;sentiment&nbsp;we&nbsp;then&nbsp;provide&nbsp;it&nbsp;a&nbsp;list&nbsp;of</span></p>
+<p style="position:absolute;top:1178px;left:96px"><span style="virtical-align:top;font-size:16px;font-family:AAAAAC+SegoeUI;color:#161616;w_h688w_h24w_h;letter-spacing:0.31287px;">tweets&nbsp;and&nbsp;then&nbsp;a&nbsp;list&nbsp;of&nbsp;sentiment&nbsp;ratings&nbsp;with&nbsp;the&nbsp;same&nbsp;number&nbsp;index.&nbsp;The&nbsp;API&nbsp;is&nbsp;able</span></p>
+<p style="position:absolute;top:132px;left:96px"><span style="virtical-align:top;font-size:24px;font-family:AAAAAB+SegoeUI-Semibold;color:#161616;font-weight:bold;w_h423w_h36w_h;letter-spacing:0.42320px;">Improving&nbsp;the&nbsp;classifier's&nbsp;efficiency</span></p>
+<p style="position:absolute;top:319px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h312w_h18w_h;letter-spacing:0.49535px;">This&nbsp;is&nbsp;a&nbsp;tweet&nbsp;sentiment&nbsp;classifier</span></p>
+<p style="position:absolute;top:362px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h329w_h18w_h;letter-spacing:0.40591px;">Tweet:&nbsp;&quot;I&nbsp;loved&nbsp;the&nbsp;new&nbsp;Batman&nbsp;movie!&quot;</span></p>
+<p style="position:absolute;top:383px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h165w_h18w_h;letter-spacing:0.70112px;">Sentiment:&nbsp;Positive</span></p>
+<p style="position:absolute;top:426px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h390w_h18w_h;letter-spacing:0.39282px;">Tweet:&nbsp;&quot;I&nbsp;hate&nbsp;it&nbsp;when&nbsp;my&nbsp;phone&nbsp;battery&nbsp;dies&quot;</span></p>
+<p style="position:absolute;top:447px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h165w_h18w_h;letter-spacing:0.70112px;">Sentiment:&nbsp;Negative</span></p>
+<p style="position:absolute;top:490px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h199w_h18w_h;letter-spacing:0.40591px;">Tweet:&nbsp;&quot;My&nbsp;day&nbsp;has&nbsp;been</span></p>
+<p style="position:absolute;top:490px;left:343px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">&quot;</span></p>
+<p style="position:absolute;top:511px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h165w_h18w_h;letter-spacing:0.70112px;">Sentiment:&nbsp;Positive</span></p>
+<p style="position:absolute;top:554px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h346w_h18w_h;letter-spacing:0.39124px;">Tweet:&nbsp;&quot;This&nbsp;is&nbsp;the&nbsp;link&nbsp;to&nbsp;the&nbsp;article&quot;</span></p>
+<p style="position:absolute;top:575px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h156w_h18w_h;letter-spacing:0.69585px;">Sentiment:&nbsp;Neutral</span></p>
+<p style="position:absolute;top:618px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h87w_h18w_h;letter-spacing:0.62448px;">Tweet&nbsp;text</span></p>
+<p style="position:absolute;top:640px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h294w_h18w_h;letter-spacing:0.38336px;">1.&nbsp;&quot;I&nbsp;loved&nbsp;the&nbsp;new&nbsp;Batman&nbsp;movie!&quot;</span></p>
+<p style="position:absolute;top:661px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h355w_h18w_h;letter-spacing:0.37398px;">2.&nbsp;&quot;I&nbsp;hate&nbsp;it&nbsp;when&nbsp;my&nbsp;phone&nbsp;battery&nbsp;dies&quot;</span></p>
+<p style="position:absolute;top:682px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h165w_h18w_h;letter-spacing:0.36725px;">3.&nbsp;&quot;My&nbsp;day&nbsp;has&nbsp;been</span></p>
+<p style="position:absolute;top:682px;left:309px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">&quot;</span></p>
+<p style="position:absolute;top:704px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h312w_h18w_h;letter-spacing:0.36994px;">4.&nbsp;&quot;This&nbsp;is&nbsp;the&nbsp;link&nbsp;to&nbsp;the&nbsp;article&quot;</span></p>
+<p style="position:absolute;top:725px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h329w_h18w_h;letter-spacing:0.38085px;">5.&nbsp;&quot;This&nbsp;new&nbsp;music&nbsp;video&nbsp;blew&nbsp;my&nbsp;mind&quot;</span></p>
+<p style="position:absolute;top:768px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h208w_h18w_h;letter-spacing:0.60887px;">Tweet&nbsp;sentiment&nbsp;ratings:</span></p>
+<p style="position:absolute;top:789px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h95w_h18w_h;letter-spacing:0.63786px;">1:&nbsp;Positive</span></p>
+<p style="position:absolute;top:811px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h95w_h18w_h;letter-spacing:0.63786px;">2:&nbsp;Negative</span></p>
+<p style="position:absolute;top:832px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h95w_h18w_h;letter-spacing:0.63786px;">3:&nbsp;Positive</span></p>
+<p style="position:absolute;top:853px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h87w_h18w_h;letter-spacing:0.62448px;">4:&nbsp;Neutral</span></p>
+<p style="position:absolute;top:875px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h95w_h18w_h;letter-spacing:0.63786px;">5:&nbsp;Positive</span></p>
+<p style="position:absolute;top:917px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h87w_h18w_h;letter-spacing:0.62448px;">Tweet&nbsp;text</span></p>
+<p style="position:absolute;top:939px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h234w_h18w_h;letter-spacing:0.39853px;">1.&nbsp;&quot;I&nbsp;can't&nbsp;stand&nbsp;homework&quot;</span></p>
+<p style="position:absolute;top:960px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h216w_h18w_h;letter-spacing:0.42282px;">2.&nbsp;&quot;This&nbsp;sucks.&nbsp;I'm&nbsp;bored</span></p>
+<p style="position:absolute;top:960px;left:363px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">&quot;</span></p>
+<p style="position:absolute;top:982px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h294w_h18w_h;letter-spacing:0.41197px;">3.&nbsp;&quot;I&nbsp;can't&nbsp;wait&nbsp;for&nbsp;Halloween!!!&quot;</span></p>
+<p style="position:absolute;top:1003px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h191w_h18w_h;letter-spacing:0.39689px;">4.&nbsp;&quot;My&nbsp;cat&nbsp;is&nbsp;adorable</span></p>
+<p style="position:absolute;top:1003px;left:359px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h9w_h18w_h;letter-spacing:0.00000px;">&quot;</span></p>
+<p style="position:absolute;top:1024px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h182w_h18w_h;letter-spacing:0.38746px;">5.&nbsp;&quot;I&nbsp;hate&nbsp;chocolate&quot;</span></p>
+<p style="position:absolute;top:1067px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h208w_h18w_h;letter-spacing:0.60887px;">Tweet&nbsp;sentiment&nbsp;ratings:</span></p>
+<p style="position:absolute;top:1088px;left:116px"><span style="virtical-align:top;font-size:13px;font-family:AAAAAE+Consolas;color:#161616;w_h17w_h18w_h;letter-spacing:0.00000px;">1.</span></p>
+</BODY>
+</HTML>
